@@ -10,7 +10,6 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>amazon</artifactId>
-
     <dependencies>
         <dependency>
             <groupId>com.groupProject</groupId>
@@ -34,10 +33,13 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.0.0-M3</version>
                 <configuration>
-                    <suiteXmlFiles>src\test\resources\Runner.xml</suiteXmlFiles>
+                    <suiteXmlFiles>
+                        <suiteXmlFiles>src/test/resources/Runner.xml</suiteXmlFiles>
+                    </suiteXmlFiles>
                 </configuration>
             </plugin>
         </plugins>
     </build>
+
 
 </project>
