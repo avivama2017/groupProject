@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Common Modules Script" parallel="false">
+
+    <parameter name="useCloudEnv" value="true"/>
+    <parameter name="cloudEnvName" value="browserstack"/>
+    <parameter name="os" value="windows"/>
+    <parameter name="os_version" value="windows 10"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="browserVersion" value="74.0"/>
+    <parameter name="envName" value="envName"/>
+    <parameter name="url" value="https://www.amazon.com/"/>
+    <parameter name="platform" value="windows"/>
+
+    <test name="Amazon Test">
+        <classes>
+            <class name="RegressionSuite.TestHomePage"/>
+
+
+        </classes>
+    </test>
+</suite>
